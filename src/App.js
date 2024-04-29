@@ -70,3 +70,18 @@ function App() {
 }
 
 export default App;
+
+
+// root : npm start
+// cd functions : firebase emulators:start
+
+// deploy after changes on react : root
+// npm run build
+// firebase deploy --only hosting
+
+// deploy after changes on backend : cd functions
+// firebase deploy --only functions //Not done yet
+
+
+
+// https://amaz-clone-6c75c.web.app

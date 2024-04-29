@@ -136,7 +136,7 @@ function Payment() {
                             <div className='payment__priceContainer'>
                                 <h3>Order Total : {total}</h3>
                             </div>
-                            <button disabled={processing || disabled || succeeded} >
+                            <button className='payment__buynowBtn' disabled={processing || disabled || succeeded} >
                                 <span>{processing ? <p>processing</p> : "Buy Now"}</span>
                             </button>
                         </form>
