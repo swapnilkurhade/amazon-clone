@@ -1,12 +1,19 @@
 import React from 'react'
 import './SubTotal.css'
 import { useStateValue } from '../ContextHere/StateProvider';
+import { useNavigate } from 'react-router-dom';
 
 function SubTotal() {
+
+  const navigate = useNavigate();
 
   const [ { basket }, dispatch] = useStateValue();
 
   const total = basket.reduce((acc, curr)=>{ return acc + curr.price;},0) || 0
+
+  const proceedCheckout = () =>{
+    navigate('/payment')
+  }
 
 
   return (
@@ -17,7 +24,7 @@ function SubTotal() {
             This order contains gift
       </small>
 
-      <button>Proceed to checkout</button>
+      <button onClick={proceedCheckout}>Proceed to checkout</button>
     </div>
   )
 }
