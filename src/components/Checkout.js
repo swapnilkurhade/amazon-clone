@@ -16,7 +16,7 @@ function Checkout() {
       <div className='checkout__left'>
         <img 
             className='checkout__ad'
-            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL/Budget/Unrec/GW/BS_2X_PC_1._CB580097921_.jpg"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/PC_hero_3000x1200_2_2x._CB559544393_.jpg"
             alt='cart_banner'
             // src='https://m.media-amazon.com/images/I/41yhwaUVEGL._AC_SY200_.jpg'
             />
